@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            /*Tipos de format():
+            - opentype (otf);
+            - truetype (ttf);
+            - embedded-opentype;
+            - truetype-aat (Apple Advanced Typoraphy);
+            - svg.
+            */
+            font-family: 'Love';
+            src: url('fonts/love\ larry.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Heart';
+            src: url('fonts/heart.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Love', serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+        h2{
+            font-family: 'Heart', serif;
+            font-size: 2em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ex ullam velit dolores iusto enim corrupti perferendis ut magnam molestiae facere inventore beatae ipsum placeat eos, ratione repellendus molestias nobis?</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consequatur ad in ea fugit expedita ex, dolorum molestias iste minus, neque odio laborum modi, cum earum! Ab earum dolorem deleniti?</p>
+</body>
+</html>

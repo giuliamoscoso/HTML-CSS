@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <!--a = âncora, href = referência hipertexto-->
+    <!--target faz com que, quando clicado, o link nao sobreponha a página e abra em uma janela em branco (_blank) / rel significa 'relativo a' / external = link externo-->
+    <p>Você pode acessar o meu <a href="https://github.com/giuliamoscoso" target="_blank" rel="external">repositório público no GitHub</a>.</p>
+    <p>Você também pode acessar o meu <a href="https://instagram.com/moscrush" target="_blank" rel="external">instagram pessoal</a>.</p>
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser, você pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p><!--os dados extras, como target e rel, atribuem valor ao link, definindo bem as engrenagens da página e não deixando para o Google descobrir-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html">página de notícias</a></p>
+    <h1>Links para downloads</h1>
+    <ul>
+        <!--checar o type de cada tipo de arquivo no iana.org/assignments/media-types-->
+        <li><a href="livro/Boleto Terra Pátria.pdf" download="Boleto Terra Pátria.pdf" type="application/pdf">Baixar o livro em pdf</a></li>
+        <li><a href="livro/Boleto Terra Pátria.zip" download="Boleto Terra Pátria" type="application/zip">Livro compactado em zip</a></li>
+    </ul>
+</body>
+</html>

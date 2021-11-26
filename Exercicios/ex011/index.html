@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <!--A ORDEM IMPORTA!!!-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <p>Método que cobre diferentes formatos e, assim, reduz as chances de não executar o arquivo:</p>
+    <!--o autoplay não está funcionando sozinho-->
+    <!--loop reinicia a reprodução após finalizada-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/true-art.mp3" type="audio/mpeg">
+        <source src="midia/true-art.ogg" type="audio/ogg">
+        <source src="midia/true-art.wav" type="audio/wav">
+        <!--caso não haja compatibilidade alguma, a mensagem abaixo será mostrada e a possibilidade de download explicitada-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/true-art.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+    <br>
+    <p>Disposição mais simples, porém que não cobre incompatibilidade no formato:</p>
+    <audio src="midia/true-art.mp3" controls autoplay></audio>
+    <!--MP3 OGG WAV (evitar, muito pesado)-->
+    <!--qualidade alta, tanto em aúdio, como em imagens,é destinado a download e não a navegação-->
+</body>
+</html>
